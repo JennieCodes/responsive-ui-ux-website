@@ -1,6 +1,7 @@
+import React from "react";
 import "./App.css";
 
-import { Article, Brand, CTA, Feature, Navbar } from "./Components";
+import { Brand, CTA, Navbar } from "./Components";
 import {
   Blog,
   Features,
@@ -13,7 +14,19 @@ import {
 function App() {
   return (
     <>
-      <div className="App">hi</div>
+      <div className="App">
+        <div className="gradient-bg">
+          <Navbar />
+          <Header />
+        </div>
+        <Brand />
+        <WhatGPT3 />
+        <Features />
+        <Possibility />
+        <CTA />
+        <Blog />
+        <Footer />
+      </div>
     </>
   );
 }
